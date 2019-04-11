@@ -19,6 +19,13 @@
   color: white;
 }
 
+.appTitle {
+  background-color: #22AFFF;
+  font-style: italic;
+  position: center;
+  text-align: center;
+}
+
 .App-link {
   color: #61dafb;
 }
