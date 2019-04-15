@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
-import mainImage from './App Class Pic.png';
+import { BrowserRouter } from 'react-router-dom'
+import mainImage from './oldHickey.jpg';
 import './App.css';
 
 class App extends Component {
