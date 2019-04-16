@@ -1,26 +1,72 @@
 .App {
-  text-align: center;
+
+}
+
+body{
+  background-color: #D6EAF8;
 }
 
 .appTitle {
-  background-color: #22AFFF;
-  font-style: italic;
   position: center;
   text-align: center;
-  color: purple;
-}
+  color: black;
+  background-color: #ABEBC6;
+  font-size: 75px;
+  font-family: "Arial", sans-serif;
+  font-weight: 100;
+  font-stretch: ultra-expanded;
+  letter-spacing: 20px;
+  margin-bottom: auto;
+  margin-top: auto;
 
-.appHeader {
-  background-color: #22AFFF;
-  font-style: italic;
-  position: center;
+}
+.bobby {
+  text-align: left;
+  position: left;
+  letter-spacing: 5px;
+  font-size: 15px;
+
+}
+.button {
+  font-size: 15px;
+  letter-spacing: 8px;
   text-align: center;
-  color: purple;
+  font-family: "Arial", sans-serif;
+  margin: 1em;
+}
+.appHeader {
+  font-style: italic;
+  color: black;
+  font-size: 10px;
+  font-family: "Arial", sans-serif;
+  font-weight: 100;
+  font-stretch: ultra-expanded;
+  letter-spacing: 10px;
+  text-align: left;
+  padding-top: -20px;
 }
 
 .App-link {
   color: #61dafb;
 }
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: #ABEBC6;
+  margin: 0px;
+}
+.Buttons{
+  display: flex;
+  flex-direction: row;
+  padding-left: 15px;
+
+}
+.LittleIntro{
+  padding-top: 0px;
+}
+
 
 @keyframes App-logo-spin {
   from {
