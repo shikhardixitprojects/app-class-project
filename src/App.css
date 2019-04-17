@@ -66,6 +66,25 @@ body{
 .LittleIntro{
   padding-top: 0px;
 }
+.body{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+
+}
+.lakeview{
+  height: 200px;
+  width: 200px;
+}
+.applebee{
+  height: 200px;
+  width: 200px;
+}
+
+.qq{
+  height: 200px;
+  width: 200px;
+}
 
 
 @keyframes App-logo-spin {
