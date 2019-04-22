@@ -58,8 +58,6 @@ body{
   margin: 0px;
 }
 .Buttons{
-  display: flex;
-  flex-direction: row;
   padding-left: 15px;
 
 }
@@ -70,7 +68,6 @@ body{
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
-
 }
 .lakeview{
   height: 200px;
