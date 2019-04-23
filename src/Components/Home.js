@@ -10,24 +10,24 @@ class Home extends Component {
 
           <div className = "flex-container">
             <h1 className = "appTitle">BELP</h1>
-            <div className = "Buttons ">
-              <h3><Link to='/'>Home</Link></h3>
-              <h3><Link to='/about'>About</Link></h3>
-              <h3><Link to='/ContactUs'>Contact Us</Link></h3>
+            <div className = "ButtonsSection ">
+              <h2 className = "button"><Link to='/' style= {{textDecoration: 'none', color: 'black'}}>Home</Link></h2>
+              <h2 className = "button"><Link to='/about' style= {{textDecoration: 'none', color: 'black'}}>About</Link></h2>
+              <h2 className = "button"><Link to='/ContactUs' style= {{textDecoration: 'none', color: 'black'}}>Contact Us</Link></h2>
             </div>
           </div>
 
-          <p className = "LittleIntro">A Guide to Eat Out near St. Bonaventure</p>
-          <p className = "appHeader">By Bonnies for Bonnies</p>
+            <p className = "appHeader">Please click on an option to explore more</p>
 
 
           </div>
 
-          <div>
-          <h3><Link to='/restaurants'>Restaurants</Link></h3>
-          </div>
-          <h3><Link to='/bars'>Bars</Link></h3>
 
+          <div className = "mainMenu">
+          <h2 className = "menuOptionsLocation"><Link to='/restaurants' style= {{textDecoration: 'none', color: 'black'}}>RESTAURANTS</Link></h2>
+          <div className = "verticalLine"></div>
+          <h2 className = "menuOptionsLocation"><Link to='/bars' style= {{textDecoration: 'none', color: 'black'}}>BARS</Link></h2>
+          </div>
       </body>
     );
   }

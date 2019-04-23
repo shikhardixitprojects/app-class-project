@@ -3,14 +3,20 @@
 }
 
 body{
-  background-color: #D6EAF8;
+  /* background-color: #fdcb6e; */
+  /* background: linear-gradient(to right,#FDA7DF,#12CBC4); */
+  /* background: linear-gradient(to right,#7efff5, #ffcccc); */
+  background-color: #7ed6df;
+
 }
 
 .appTitle {
   position: center;
   text-align: center;
   color: black;
-  background-color: #ABEBC6;
+  /* background-color: #ABEBC6; */
+  /* background-color: #FDA7DF; */
+  /* background-color: #FFC312; */
   font-size: 75px;
   font-family: "Arial", sans-serif;
   font-weight: 100;
@@ -19,12 +25,75 @@ body{
   margin-bottom: auto;
   margin-top: auto;
 
+
 }
-.bobby {
-  text-align: left;
-  position: left;
-  letter-spacing: 5px;
+button:link{
+  text-decoration: underline;
+}
+button:visited{
+  text-decoration: underline;
+}
+
+.verticalLine {
+  border-left: 4px solid black;
+  height: 750px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 150px;
+}
+  /* .bobby {
+    text-align: left;
+    position: left;
+    letter-spacing: 5px;
+    font-size: 15px;
+  } */
+
+.appHeader {
+  display:flex;
+  align-items: flex-end;
+  font-style: italic;
+  color: black;
   font-size: 15px;
+  font-family: "Arial", sans-serif;
+  font-weight: 100;
+  font-stretch: ultra-expanded;
+  letter-spacing: 7px;
+  padding-top: 10px;
+  padding-left: 400px;
+
+
+}
+/* .LittleIntro{
+  padding-top: 0px;
+  padding-top: 10px;
+
+  text-align: center;
+} */
+
+.App-link {
+  color: black;
+  text-decoration: none;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  /* background-color: #ABEBC6; */
+  /* background-color: #0652DD; */
+  margin: 0px;
+  border-style: solid;
+  /* background-color: #FFC312; */
+   background: linear-gradient(to right,#FDA7DF,#f9ca24);
+
+}
+.ButtonsSection{
+  display: flex;
+  flex-direction: row;
+  padding-left: 15px;
+
 
 }
 .button {
@@ -33,40 +102,31 @@ body{
   text-align: center;
   font-family: "Arial", sans-serif;
   margin: 1em;
-}
-.appHeader {
-  font-style: italic;
-  color: black;
-  font-size: 10px;
-  font-family: "Arial", sans-serif;
-  font-weight: 100;
-  font-stretch: ultra-expanded;
-  letter-spacing: 10px;
-  text-align: left;
-  padding-top: -20px;
+  color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
-}
-.flex-container{
+.mainMenu {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: flex-end;
-  background-color: #ABEBC6;
-  margin: 0px;
-}
-.Buttons{
-  padding-left: 15px;
+  justify-content: space-around;
+  border-style: solid;
 
 }
-.LittleIntro{
-  padding-top: 0px;
+
+.menuOptionsLocation{
+    font-size: 15px;
+  text-align: center;
+  padding-top: 235px;
+  padding-bottom: 323px;
+  letter-spacing: 10px;
+
 }
+
 .body{
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   flex-direction: row;
 }
 .lakeview{
