@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Banner from './Banner'
 
 const Restaurants = () => (
   <div>
-    <li><Link to='/'>Home</Link></li>
+    <Banner/>
     <li><Link to='/applebees'>Click to check out more about Applebees!</Link></li>
     <img className="lakeview" src="http://file1.chinesemenu.com/115741730/20100119031523621.jpg" alt="lakeview" />
     <p className = "LakeView"> LakeView is a chinese restaurant that serves chinese food. It is typcially quite empty, but it seems most of the customers order from here than go here. Still, it has quality food and pretty cheap. Rating 4/5</p>

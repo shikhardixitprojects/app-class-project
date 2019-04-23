@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Banner from './Banner'
 
 const Bars = () => (
   <div>
-    <li><Link to='/'>Home</Link></li>
+    <Banner/>
     <h1>Welcome to the Applebees!</h1>
   </div>
 )
