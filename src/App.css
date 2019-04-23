@@ -17,7 +17,7 @@ body{
   /* background-color: #ABEBC6; */
   /* background-color: #FDA7DF; */
   /* background-color: #FFC312; */
-  font-size: 75px;
+  font-size: 55px;
   font-family: "Arial", sans-serif;
   font-weight: 100;
   font-stretch: ultra-expanded;
@@ -41,6 +41,7 @@ button:visited{
   left: 50%;
   margin-left: -3px;
   top: 150px;
+  top: 130px;
 }
   /* .bobby {
     text-align: left;
@@ -143,6 +144,10 @@ button:visited{
   width: 200px;
 }
 
+.contactUsMore {
+  font-family: "Arial", sans-serif;
+  font-size: 10px;
+}
 
 @keyframes App-logo-spin {
   from {
