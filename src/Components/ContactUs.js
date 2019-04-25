@@ -21,7 +21,7 @@ const ContactUs = () => (
     <img className="bitImg" src={bitBobby}/>
       <p> Bobby Nguyen </p>
       <p> nguyenla16@bonaventure.edu </p>
-</div>
+  </div>
 
   <div className="contact">
     <img className="bitImg" src={bitShiki}/>
@@ -40,9 +40,6 @@ const ContactUs = () => (
         <p> George Gadelha</p>
         <p> gadelhgj19@bonaventure.edu </p>
         </div>
-
-
-
   </div>
 )
 
