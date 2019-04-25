@@ -144,18 +144,26 @@ button:visited{
   width: 200px;
 }
 
+
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
 .contact{
-    height: 80vh;
+  width: 25%;
     display: flex;
     padding-top: 10px;
-    flex-wrap: wrap;
     justify-content: space-around;
-    flex-direction: column;
+    flex-direction: row;
+    display: inline-block;
     text-align: center;
-    align-items: center;
-    border-style: solid;
+
+
 
 }
+
 
 .bobby{
   height: 200px;

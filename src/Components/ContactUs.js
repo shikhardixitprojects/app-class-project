@@ -10,25 +10,31 @@ const ContactUs = () => (
   <div>
     <Banner/>
     <h1>If you would like to reach out to us, here is our information:</h1>
-    <div className = "contact">
 
+    <div className="contact">
     <img className="bobby" src={bitMike}/>
       <p> Michael Czyzewski </p>
       <p> czyzewm16@bonaventure.edu </p>
+</div>
 
+  <div className="contact">
     <img className="bobby" src={bitBobby}/>
       <p> Bobby Nguyen </p>
       <p> nguyenla16@bonaventure.edu </p>
+</div>
 
+  <div className="contact">
     <img className="bobby" src={bitShiki}/>
       <p> Shiki Dixit </p>
       <p> shikhardixit17@gmail.com </p>
+</div>
 
+  <div className="contact">
       <img className="bobby" src={bitKat}/>
         <p> Katarina Jones </p>
         <p> nguyenla16@bonaventure.edu </p>
+        </div>
 
-    </div>
 
   </div>
 )
