@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import Banner from './Banner'
 import bitBobby from "../assets/bitBobby.png"
 import bitMike from "../assets/bitMike.png"
