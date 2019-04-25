@@ -9,7 +9,7 @@ import bitKat from "../assets/bitKat.png"
 const ContactUs = () => (
   <div>
     <Banner/>
-    <h1>If you would like to reach out to us, here is our information:</h1>
+    <h2 className = "contactPitch">OUR FOUNDING MEMBERS:</h2>
 
     <div className="contact">
     <img className="bobby" src={bitMike}/>
