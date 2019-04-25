@@ -24,8 +24,14 @@ body{
   letter-spacing: 20px;
   margin-bottom: auto;
   margin-top: auto;
+}
 
-
+.belpTitle {
+  font-family: "Arial", sans-serif;
+  font-size: 17px;
+  letter-spacing: 5px;
+  padding-right:550px;
+  padding-top: 5px;
 }
 button:link{
   text-decoration: underline;
@@ -37,11 +43,9 @@ button:visited{
 .verticalLine {
   border-left: 4px solid black;
   height: 750px;
-  position: absolute;
   left: 50%;
   margin-left: -3px;
-  top: 150px;
-  top: 130px;
+
 }
   /* .bobby {
     text-align: left;
@@ -160,12 +164,22 @@ button:visited{
     display: inline-block;
     text-align: center;
 
+}
 
+.contactPitch{
+  font-family: "Arial", sans-serif;
+  font-size: 25px;
+  font-style: italic;
+  letter-spacing: 20px;
 
 }
 
+<<<<<<< HEAD
 
 .bitImg{
+=======
+.bobby{
+>>>>>>> 91f484d14a81185e6db0e24d09392700cd9f6b08
   height: 200px;
   width: 200px;
 }
@@ -177,10 +191,6 @@ button:visited{
   justify-content: center;
 } */
 
-.contactUsMore {
-  font-family: "Arial", sans-serif;
-  font-size: 10px;
-}
 
 @keyframes App-logo-spin {
   from {

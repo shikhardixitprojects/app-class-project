@@ -5,8 +5,11 @@ import Banner from './Banner'
 const About = () => (
   <div>
     <Banner/>
-    <h1>Welcome to Belp, the St. Bonaventure Yelp page! We hope to educate about the local restaurants and bars around Bonaventure to provide students
-    with a wholesome experience about Bonas!</h1>
+    <h2 className = "aboutPitch">Welcome to BELP, Bonnies' YELP page!
+    <brk></brk>
+    BELP was created to provide St. Bonaventure University students
+    extra information on where to eat out in town.
+    Our goal is to help YOU decide which restaurants fit your appetite, mood, and pocket.</h2>
   </div>
 )
 

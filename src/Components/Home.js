@@ -18,9 +18,10 @@ class Home extends Component {
 
 
           <div className = "mainMenu">
-          <h2 className = "menuOptionsLocation"><Link to='/restaurants' style= {{textDecoration: 'none', color: 'black'}}>RESTAURANTS</Link></h2>
+          <h2 className = "menuOptionsLocation"><Link to='/restaurants'
+                          style= {{textDecoration: 'none', color: 'black', paddingLeft: '15px'}}>RESTAURANTS</Link></h2>
           <div className = "verticalLine"></div>
-          <h2 className = "menuOptionsLocation"><Link to='/bars' style= {{textDecoration: 'none', color: 'black'}}>BARS</Link></h2>
+          <h2 className = "menuOptionsLocation"><Link to='/bars' style= {{textDecoration: 'none', color: 'black',paddingRight: '125px'}}>BARS</Link></h2>
           </div>
       </body>
     );
