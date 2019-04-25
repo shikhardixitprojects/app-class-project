@@ -145,13 +145,14 @@ button:visited{
 }
 
 .contact{
-    height: 40vh;
+    height: 80vh;
     display: flex;
-
+    padding-top: 10px;
+    flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: column;
-    flex-wrap: wrap;
-  text-align: center;
+    text-align: center;
+    align-items: center;
     border-style: solid;
 
 }
