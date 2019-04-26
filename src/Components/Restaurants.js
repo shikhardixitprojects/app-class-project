@@ -3,10 +3,12 @@ import { BrowserRouter,NavLink,Route } from 'react-router-dom'
 import Banner from './Banner'
 
 const Restaurants = () => (
+  <div>
+  <Banner/>
   <BrowserRouter>
-    <Banner/>
     <DashBoard/>
   </BrowserRouter>
+  </div>
 )
 
 class DashBoard extends React.Component{
