@@ -17,7 +17,7 @@ const About = () => (
     <p className = "aboutIntro">We hope that with BELP, St. Bonaventure students
     will have access to these resources to make the best choice based on appetite, style, and pocket.
     Furthermore, we also want to encourage fellow students to really see the power of computer science
-    and how it enables the creation of amazing things (such as, this website).  
+    and how it enables the creation of amazing things (such as, this website).
     </p>
   </div>
 )
