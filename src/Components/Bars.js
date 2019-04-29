@@ -2,12 +2,16 @@ import React from 'react'
 import { BrowserRouter,NavLink,Route } from 'react-router-dom'
 import Banner from './Banner'
 
+const bars = [
+  { headerText : "Welcome to the Burton", name:"Burton", route: "burton" },
+  { headerText : "Welcome To The OP", name:"Other Place", route: 'otherplace' },
+  { headerText : "Welcome To Fusion", name: "Fusion", route:"fusion" },
+]
+
 const Bars = () => (
   <div>
   <Banner/>
-  <BrowserRouter>
-    <DashBoard/>
-  </BrowserRouter>
+  <DashBoard/>
   </div>
 )
 
@@ -16,28 +20,34 @@ class DashBoard extends React.Component{
     return(
       <div>
           <div>
-            <li><NavLink exact to="/Burton">Burton</NavLink></li>
-            <li><NavLink exact to="/OtherPlace">The Other Place</NavLink></li>
-          </div>
+          {
+            bars.map( ({headerText, name, route}) => (
+              <li>
+                <NavLink exact to={"/bars/" + route} >
+                  {name}
+                  </NavLink>
+              </li>
+            ))
+          }
+        </div>
         <div>
-          <Route exact path="/Burton" component={Burton} />
-          <Route exact path="/OtherPlace" component={OtherPlace} />
+
+          {
+            bars.map( ({headerText, name, route}) => (
+              <Route key={name} exact path={"/bars/" + route}
+              render = { () => <Bar headerText={headerText} /> } />
+            ))
+          }
+
         </div>
       </div>
     )
   }
 }
 
-class Burton extends React.Component {
-    render() {
-        return <h1>Welcome to Burton</h1>;
-    }
+const Bar = ({ headerText }) => {
+        return <h1>{ headerText }</h1>;
 }
 
-class OtherPlace extends React.Component {
-    render() {
-        return <h1>Welcome to The Other Place!</h1>;
-    }
-}
 
 export default Bars
