@@ -20,7 +20,7 @@ const ContactUs = () => (
     <h2 className = "contactPitch">OUR FOUNDING MEMBERS:</h2>
 {
 founders.map( ({file, name, email}) => (
-  <Contact file = {file} name = {name} email = {email} />
+  <Contact key = {name} file = {file} name = {name} email = {email} />
 ))
 }
 </div>
@@ -28,7 +28,7 @@ founders.map( ({file, name, email}) => (
 
 const Contact = ({file, name, email}) => (
   <div className = "contact">
-  <img key = {name} className = "bitImg" src = {file}/>
+  <img className = "bitImg" src = {file}/>
     <p> {name} </p>
     <p> {email} </p>
   </div>

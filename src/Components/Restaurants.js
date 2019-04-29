@@ -23,7 +23,7 @@ class DashBoard extends React.Component{
           <NavLink exact to="/restaurants">All Restaurants</NavLink>
           {
             restaurants.map( ({headerText, name, route}) => (
-              <li>
+              <li key = {name}>
                 <NavLink exact to={"/restaurants/" + route} >
                   {name}
                   </NavLink>
