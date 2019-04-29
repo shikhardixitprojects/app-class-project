@@ -1,22 +1,14 @@
 .App {
 
 }
-
 body{
-  /* background-color: #fdcb6e; */
-  /* background: linear-gradient(to right,#FDA7DF,#12CBC4); */
-  /* background: linear-gradient(to right,#7efff5, #ffcccc); */
   background-color: #7ed6df;
-
 }
 
 .appTitle {
   position: center;
   text-align: center;
   color: black;
-  /* background-color: #ABEBC6; */
-  /* background-color: #FDA7DF; */
-  /* background-color: #FFC312; */
   font-size: 55px;
   font-family: "Arial", sans-serif;
   font-weight: 100;
@@ -26,6 +18,21 @@ body{
   margin-top: auto;
 }
 
+.aboutWhat{
+  letter-spacing: 5px;
+  font-family: "Arial", sans-serif;
+  font-size: 20px;
+  text-decoration: underline;
+  margin: 1em;
+}
+.aboutIntro{
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+  margin: 1em;
+  padding-right: 55%;
+}
+
 .belpTitle {
   font-family: "Arial", sans-serif;
   font-size: 17px;
@@ -33,26 +40,12 @@ body{
   padding-right:550px;
   padding-top: 5px;
 }
-button:link{
-  text-decoration: underline;
-}
-button:visited{
-  text-decoration: underline;
-}
-
 .verticalLine {
   border-left: 4px solid black;
   height: 750px;
   left: 50%;
   margin-left: -3px;
-
 }
-  /* .bobby {
-    text-align: left;
-    position: left;
-    letter-spacing: 5px;
-    font-size: 15px;
-  } */
 
 .appHeader {
   display:flex;
@@ -67,15 +60,7 @@ button:visited{
   padding-top: 10px;
   padding-left: 400px;
 
-
 }
-/* .LittleIntro{
-  padding-top: 0px;
-  padding-top: 10px;
-
-  text-align: center;
-} */
-
 .App-link {
   color: black;
   text-decoration: none;
@@ -86,19 +71,15 @@ button:visited{
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  /* background-color: #ABEBC6; */
-  /* background-color: #0652DD; */
   margin: 0px;
   border-style: solid;
-  /* background-color: #FFC312; */
-   background: linear-gradient(to right,#FDA7DF,#f9ca24);
+  background: linear-gradient(to right,#FDA7DF,#f9ca24);
 
 }
 .ButtonsSection{
   display: flex;
   flex-direction: row;
   padding-left: 15px;
-
 
 }
 .button {
@@ -163,7 +144,6 @@ button:visited{
     flex-direction: row;
     display: inline-block;
     text-align: center;
-
 }
 
 .contactPitch{
@@ -173,8 +153,6 @@ button:visited{
   letter-spacing: 20px;
 
 }
-
-
 .bitImg{
   height: 200px;
   width: 200px;
