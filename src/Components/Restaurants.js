@@ -1,13 +1,17 @@
 import React from 'react'
-import { BrowserRouter,NavLink,Route } from 'react-router-dom'
+import { NavLink,Route } from 'react-router-dom'
 import Banner from './Banner'
+
+const restaurants = [
+  { headerText : "Welcome to Applebees", name:"Applebees", route: "applebees" },
+  { headerText : "Welcome To QQ Buffet", name:"QQ", route: "qq" },
+  { headerText : "Welcome To Dominoes", name: "Dominoes", route:"dominoes" }
+]
 
 const Restaurants = () => (
   <div>
-  <Banner/>
-  <BrowserRouter>
+    <Banner/>
     <DashBoard/>
-  </BrowserRouter>
   </div>
 )
 
@@ -16,28 +20,32 @@ class DashBoard extends React.Component{
     return(
       <div>
           <div>
-            <li><NavLink exact to="/Applebees">Applebees</NavLink></li>
-            <li><NavLink exact to="/ElSombrero">El Sombrero</NavLink></li>
+          <NavLink exact to="/restaurants">All Restaurants</NavLink>
+          {
+            restaurants.map( ({headerText, name, route}) => (
+              <li>
+                <NavLink exact to={"/restaurants/" + route} >
+                  {name}
+                  </NavLink>
+              </li>
+            ))
+          }
           </div>
         <div>
-          <Route exact path="/Applebees" component={Applebees} />
-          <Route exact path="/ElSombrero" component={ElSombrero} />
+        {
+          restaurants.map( ({headerText, name, route}) => (
+            <Route key={name} exact path={"/restaurants/" + route}
+            render = { () => <Restaurant headerText={headerText} /> } />
+          ))
+        }
         </div>
       </div>
     )
   }
 }
 
-class Applebees extends React.Component {
-    render() {
-        return <h1>Welcome to Applebees</h1>;
-    }
-}
-
-class ElSombrero extends React.Component {
-    render() {
-        return <h1>Welcome to El Sombrero!</h1>;
-    }
+const Restaurant = ({ headerText }) => {
+        return <h1>{ headerText }</h1>;
 }
 
 export default Restaurants

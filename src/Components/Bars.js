@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter,NavLink,Route } from 'react-router-dom'
+import { NavLink,Route } from 'react-router-dom'
 import Banner from './Banner'
 
 const bars = [
@@ -10,8 +10,8 @@ const bars = [
 
 const Bars = () => (
   <div>
-  <Banner/>
-  <DashBoard/>
+    <Banner/>
+    <DashBoard/>
   </div>
 )
 
@@ -20,6 +20,7 @@ class DashBoard extends React.Component{
     return(
       <div>
           <div>
+          <NavLink exact to="/bars">All Bars</NavLink>
           {
             bars.map( ({headerText, name, route}) => (
               <li>
