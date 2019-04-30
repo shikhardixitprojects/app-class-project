@@ -10,10 +10,9 @@ const restaurants = [
 
 const Restaurants = () => (
   <div>
-    <div style={{ minHeight: '100%' }}>
-    <div style={{ display: 'flex', alignItems: 'flex-start' }}>
+    <div style={{ display: 'grid', gridTemplateColumns: '17% 83%', minHeight: '100%' }}>
         <Nav destinations = {restaurants} subroute = "restaurants"/>
-      <div style={{ height: 1600, width: '100%', border: '3px solid blue'}}>
+      <div style={{ height: 1400, width: '100%', border: '3px solid black'}}>
       {
         restaurants.map( ({headerText, name, route}) => (
           <Route key={name} exact path={"/restaurants/" + route}
@@ -23,11 +22,12 @@ const Restaurants = () => (
       </div>
     </div>
   </div>
-  </div>
+
 )
 
 const Restaurant = ({ headerText }) => {
-        return <h1>{ headerText }</h1>;
+        return <h1 style ={{fontFamily: 'Arial', letterSpacing: '20px', fontStyle: 'italic', fontSize: '25px'}}>{ headerText }</h1>;
 }
+
 
 export default Restaurants

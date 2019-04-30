@@ -43,8 +43,9 @@ body{
 .verticalLine {
   border-left: 4px solid black;
   height: 750px;
-  left: 50%;
-  margin-left: -3px;
+  /* left: 50%; */
+  /* margin-left: -3px; */
+  grid-column-start: 2;
 }
 
 .appHeader {
@@ -93,20 +94,28 @@ body{
 }
 
 .mainMenu {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 50% 2.5% 47.5%;
   border-style: solid;
-
 }
-
 .menuOptionsLocation{
-    font-size: 15px;
+  font-size: 15px;
   text-align: center;
   padding-top: 235px;
   padding-bottom: 323px;
   letter-spacing: 10px;
+  grid-column-start: 1;
+}
+
+.barsLocation2{
+  font-size: 15px;
+  text-align: center;
+  padding-top: 235px;
+  padding-bottom: 323px;
+  letter-spacing: 10px;
+  grid-column-start: 3;
+
+
 
 }
 
@@ -149,7 +158,11 @@ body{
   flex-direction: row;
   justify-content: center;
 } */
+Restaurants{
+  display: flex;
+  flex-direction: column;
 
+}
 
 @keyframes App-logo-spin {
   from {

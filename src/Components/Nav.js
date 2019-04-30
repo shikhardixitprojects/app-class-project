@@ -5,7 +5,7 @@ import StickyBox from "react-sticky-box";
 
 const Nav = ({destinations, subroute}) => (
 
-  <StickyBox style={{ border: '3px solid green', margin: '5px 50px' }}>
+  <StickyBox style={{ border: '3px solid black',  width: '100%', border: '3px solid black'}}>
   {
     destinations.map( ({headerText, name, route}) => (
       <li key = {name}>
