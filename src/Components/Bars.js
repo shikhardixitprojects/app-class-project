@@ -1,6 +1,5 @@
 import React from 'react'
-import { NavLink,Route } from 'react-router-dom'
-import StickyBox from "react-sticky-box";
+import { Route } from 'react-router-dom'
 import Nav from './Nav'
 
 const bars = [
