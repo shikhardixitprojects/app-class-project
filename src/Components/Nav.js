@@ -9,7 +9,7 @@ const Nav = ({destinations, subroute}) => (
   {
     destinations.map( ({headerText, name, route}) => (
       <li key = {name}>
-        <NavLink exact to={"/" + subroute + "/" + route} >
+        <NavLink exact to={"/" + subroute + "/" + route} style = {{textDecoration: 'none', color: 'black'}} >
           {name}
           </NavLink>
       <h2 />
