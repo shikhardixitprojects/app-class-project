@@ -26,7 +26,7 @@ founders.map( ({file, name, email}) => (
 
 const Contact = ({file, name, email}) => (
   <div className = "contact">
-  <img className = "bitImg" src = {file}/>
+  <img className = "bitImg" alt = {file} src = {file}/>
     <p> {name} </p>
     <p> {email} </p>
   </div>

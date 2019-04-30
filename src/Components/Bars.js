@@ -3,17 +3,16 @@ import { Route } from 'react-router-dom'
 import Nav from './Nav'
 
 const bars = [
-  { headerText : "Welcome to the Burton", name:"Burton", route: "burton" },
-  { headerText : "Welcome To The OP", name:"Other Place", route: "otherplace" },
-  { headerText : "Welcome To Fusion", name: "Fusion", route:"fusion" },
+  { headerText : "Burton", name:"Burton", route: "burton" },
+  { headerText : "OP", name:"Other Place", route: "otherplace" },
+  { headerText : "Fusion", name: "Fusion", route:"fusion" },
 ]
 
 const Bars = () => (
 <div>
-  <div style={{ minHeight: '100%' }}>
-  <div style={{ display: 'flex', alignItems: 'flex-start' }}>
+  <div style={{ display: 'grid', gridTemplateColumns: '10% 90%', minHeight: '100%' }}>
       <Nav destinations = {bars} subroute = "bars"/>
-    <div style={{ height: 1600, width: '100%', border: '3px solid blue'}}>
+    <div style={{ height: 1400, width: '100%', border: '3px solid black'}}>
     {
       bars.map( ({headerText, name, route}) => (
         <Route key={name} exact path={"/bars/" + route}
@@ -22,7 +21,6 @@ const Bars = () => (
     }
     </div>
   </div>
-</div>
 </div>
 
 )

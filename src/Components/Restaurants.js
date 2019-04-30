@@ -32,7 +32,7 @@ const Restaurant = ({ headerText, img, deliver }) => {
         return (
           <div>
             <h1 style ={{fontFamily: 'Arial', letterSpacing: '3px', fontStyle: 'italic', fontSize: '25px'}}>{ headerText }</h1>
-            <img className = "img" src = {img}/>
+            <img className = "img" alt = {img} src = {img}/>
             <h1 style ={{fontFamily: 'Arial', letterSpacing: '5px', fontStyle: 'italic', fontSize: '20px'}}>Do they deliver? { deliver }</h1>
           </div>
         )
