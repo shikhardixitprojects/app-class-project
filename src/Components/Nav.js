@@ -5,13 +5,14 @@ import StickyBox from "react-sticky-box";
 
 const Nav = ({destinations, subroute}) => (
 
-  <StickyBox style={{ border: '3px solid black',  width: '100%', border: '3px solid black'}}>
+  <StickyBox style={{ height: '200px', border: '3px solid black',  width: '98%', backgroundColor: '#b8a9c9' }}>
   {
     destinations.map( ({headerText, name, route}) => (
       <li key = {name}>
         <NavLink exact to={"/" + subroute + "/" + route} >
           {name}
           </NavLink>
+      <h2 />
       </li>
     ))
   }

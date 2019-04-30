@@ -152,6 +152,13 @@ body{
   height: 200px;
   width: 200px;
 }
+
+.img{
+  height: 200px;
+  width: 300px;
+  border: 2px solid black;
+  position: static;
+}
 /* .desc{
   display: flex;
   flex-direction: column;
