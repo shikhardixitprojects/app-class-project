@@ -1,5 +1,4 @@
 import React from 'react'
-import Banner from './Banner'
 import bitBobby from "../assets/bitBobby.png"
 import bitMike from "../assets/bitMike.png"
 import bitShiki from "../assets/bitShiki.png"
@@ -16,7 +15,6 @@ const founders = [
 
 const ContactUs = () => (
   <div>
-    <Banner/>
     <h2 className = "contactPitch">OUR FOUNDING MEMBERS:</h2>
 {
 founders.map( ({file, name, email}) => (

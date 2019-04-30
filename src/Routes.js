@@ -6,9 +6,6 @@ import ContactUs from './Components/ContactUs'
 import Restaurants from './Components/Restaurants'
 import Bars from './Components/Bars'
 
-
-
-
 const Routes = () => (
   <main>
     <Switch>

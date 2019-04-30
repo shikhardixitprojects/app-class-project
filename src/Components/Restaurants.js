@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink,Route } from 'react-router-dom'
-import Banner from './Banner'
+import Nav from './Nav'
 
 const restaurants = [
   { headerText : "Welcome to Applebees", name:"Applebees", route: "applebees" },
@@ -10,39 +10,21 @@ const restaurants = [
 
 const Restaurants = () => (
   <div>
-    <Banner/>
-    <DashBoard/>
+    <div style={{ minHeight: '100%' }}>
+    <div style={{ display: 'flex', alignItems: 'flex-start' }}>
+        <Nav destinations = {restaurants} subroute = "restaurants"/>
+      <div style={{ height: 1600, width: '100%', border: '3px solid blue'}}>
+      {
+        restaurants.map( ({headerText, name, route}) => (
+          <Route key={name} exact path={"/restaurants/" + route}
+          render = { () => <Restaurant headerText={headerText} /> } />
+        ))
+      }
+      </div>
+    </div>
+  </div>
   </div>
 )
-
-class DashBoard extends React.Component{
-  render(){
-    return(
-      <div>
-          <div>
-          <NavLink exact to="/restaurants">All Restaurants</NavLink>
-          {
-            restaurants.map( ({headerText, name, route}) => (
-              <li key = {name}>
-                <NavLink exact to={"/restaurants/" + route} >
-                  {name}
-                  </NavLink>
-              </li>
-            ))
-          }
-          </div>
-        <div>
-        {
-          restaurants.map( ({headerText, name, route}) => (
-            <Route key={name} exact path={"/restaurants/" + route}
-            render = { () => <Restaurant headerText={headerText} /> } />
-          ))
-        }
-        </div>
-      </div>
-    )
-  }
-}
 
 const Restaurant = ({ headerText }) => {
         return <h1>{ headerText }</h1>;

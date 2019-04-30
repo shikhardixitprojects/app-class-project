@@ -1,9 +1,7 @@
 import React from 'react'
-import Banner from './Banner'
 
 const About = () => (
   <div>
-    <Banner/>
     <h2 className = "contactPitch">WELCOME TO BELP </h2>
     <br/>
     <h3 className = "aboutWhat">What is this?</h3>
