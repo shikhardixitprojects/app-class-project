@@ -13,9 +13,9 @@ const restaurants = [
 
 const Restaurants = () => (
   <div>
-    <div style={{ display: 'grid', gridTemplateColumns: '20% 80%', minHeight: '100%' }}>
+    <div style={{ display: 'grid', gridTemplateColumns: '17% 83%', minHeight: '100%' }}>
           <Nav destinations = {restaurants} subroute = "restaurants"/>
-      <div style={{ height: 1400, width: 900, border: '3px solid black'}}>
+      <div style={{ height: 800, border: '3px solid black'}}>
       {
         restaurants.map( ({headerText, name, route, img, deliver}) => (
           <Route key={name} exact path={"/restaurants/" + route}
@@ -33,7 +33,7 @@ const Restaurant = ({ headerText, img, deliver }) => {
           <div>
             <h1 style ={{fontFamily: 'Arial', letterSpacing: '3px', fontStyle: 'italic', fontSize: '25px'}}>{ headerText }</h1>
             <img className = "img" alt = {img} src = {img}/>
-            <h1 style ={{fontFamily: 'Arial', letterSpacing: '5px', fontStyle: 'italic', fontSize: '20px'}}>Do they deliver? { deliver }</h1>
+            <p style ={{fontFamily: 'Arial', letterSpacing: '5px', fontSize: '20px'}}>Do they deliver? { deliver }</p>
           </div>
         )
 }

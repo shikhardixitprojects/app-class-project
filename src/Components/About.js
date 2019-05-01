@@ -1,7 +1,7 @@
 import React from 'react'
-
+import BitEatingTrans from "../assets/BitEatingTrans.png"
 const About = () => (
-  <div>
+  <div >
     <h2 className = "contactPitch">WELCOME TO BELP </h2>
     <br/>
     <h3 className = "aboutWhat">What is this?</h3>
@@ -17,6 +17,7 @@ const About = () => (
     Furthermore, we also want to encourage fellow students to really see the power of computer science
     and how it enables the creation of amazing things (such as, this website).
     </p>
+    <img src = {BitEatingTrans}/>
   </div>
 )
 
