@@ -8,14 +8,14 @@ import dominoes from "../assets/Dominoes.gif"
 const restaurants = [
   { headerText : "Applebees: A Standard American Experience", name:"Applebees", route: "applebees", img: applebees, deliver: "No" },
   { headerText : "Lake View: Craving Chinese?", name:"Lake View", route: "lakeview", img: lakeview, deliver: "Yes"},
-  { headerText : "Dominoes: Yeah, we got a Domnioes.", name: "Dominoes", route:"dominoes", img: dominoes, deliver: "Yes, popular!" }
+  { headerText : "Dominoes: Yeah, we got a Dominoes.", name: "Dominoes", route:"dominoes", img: dominoes, deliver: "Yes, popular!" }
 ]
 
 const Restaurants = () => (
   <div>
-    <div style={{ display: 'grid', gridTemplateColumns: '10% 90%', minHeight: '100%' }}>
+    <div style={{ display: 'grid', gridTemplateColumns: '20% 80%', minHeight: '100%' }}>
           <Nav destinations = {restaurants} subroute = "restaurants"/>
-      <div style={{ height: 1400, width: '100%', border: '3px solid black'}}>
+      <div style={{ height: 1400, width: 900, border: '3px solid black'}}>
       {
         restaurants.map( ({headerText, name, route, img, deliver}) => (
           <Route key={name} exact path={"/restaurants/" + route}

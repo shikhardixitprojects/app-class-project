@@ -159,6 +159,10 @@ body{
   border: 2px solid black;
   position: static;
 }
+
+.links{
+  padding: 20px;
+}
 /* .desc{
   display: flex;
   flex-direction: column;
