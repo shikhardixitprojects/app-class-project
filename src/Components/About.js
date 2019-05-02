@@ -21,7 +21,7 @@ const About = () => (
     </div>
 
     <div className = "bitEats">
-    <img src = {BitEatingTrans}/>
+    <img src = {BitEatingTrans} alt = {BitEatingTrans}/>
     </div>
   </div>
 )
