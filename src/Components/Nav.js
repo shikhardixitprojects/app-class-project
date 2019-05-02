@@ -9,7 +9,7 @@ const Nav = ({destinations, subroute}) => (
   {
     destinations.map( ({headerText, name, route}) => (
       <div className = "links" key = {name}>
-        <NavLink exact to={"/" + subroute + "/" + route} style = {{textDecoration: 'none', color: 'black', fontFamily: 'Arial', fontSize: '25px', letterSpacing: '5px'}} >
+        <NavLink exact to={"/" + subroute + "/" + route} style = {{textDecoration: 'none', color: 'black', fontFamily: 'Arial', fontSize: '17px', letterSpacing: '5px'}} >
           {name}
         </NavLink>
       </div>

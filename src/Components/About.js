@@ -1,7 +1,8 @@
 import React from 'react'
 import BitEatingTrans from "../assets/BitEatingTrans.png"
 const About = () => (
-  <div >
+  <div className = "aboutContainer" >
+    <div className = "aboutTexts">
     <h2 className = "contactPitch">WELCOME TO BELP </h2>
     <br/>
     <h3 className = "aboutWhat">What is this?</h3>
@@ -9,7 +10,7 @@ const About = () => (
     <p className = "aboutIntro"> The creation of BELP started as an inspiration from YELP
      and as a class project for IT280B - App Development. Our founding members wanted a streamlined
      resource of restaurants and bars around town exlusively for St. Bonaventure students because as students ourselves,
-     we understand what we want and where we want to dine.</p>
+     we understand what and where we want to dine.</p>
      <br/>
        <h3 className = "aboutWhat">Our goal is:</h3>
     <p className = "aboutIntro">We hope that with BELP, St. Bonaventure students
@@ -17,7 +18,11 @@ const About = () => (
     Furthermore, we also want to encourage fellow students to really see the power of computer science
     and how it enables the creation of amazing things (such as, this website).
     </p>
+    </div>
+
+    <div className = "bitEats">
     <img src = {BitEatingTrans}/>
+    </div>
   </div>
 )
 
