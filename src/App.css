@@ -171,6 +171,7 @@ body{
 .img{
   height: 200px;
   width: 300px;
+  align-self: center;
 }
 
 .links{
@@ -179,15 +180,18 @@ body{
 
 .restaurant-page{
   display: flex;
-  align-items: center;
   flex-direction: column;
 }
-/* .desc{
-  display: flex;
-  flex-direction: column;
-  flex-direction: row;
-  justify-content: center;
-} */
+
+.headerText{
+  align-self: center;
+}
+
+table, th, td {
+  border: 2px solid black;
+  align-self: center;
+}
+
 Restaurants{
   display: flex;
   flex-direction: column;

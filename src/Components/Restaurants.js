@@ -10,12 +10,12 @@ import beefnbarrel from "../assets/beef n barrel.jpg"
 
 
 const restaurants = [
-  { headerText : "Applebees: A Standard American Experience", name:"Applebees", route: "applebees", img: applebees, address: "3067 W State St, Olean, NY", phoneNumber: "(716) 372-2828", deliver: "No delivery", review: "Bobby Nguyen '21': I personally enjoy the food here. Karaoke nights are always a plus!" },
-  { headerText : "Lake View: Craving Chinese?", name:"Lake View", route: "lakeview", img: lakeview, address: "3042 NY-417, Olean, NY", phoneNumber: "(716) 373-0100", deliver: "Yes delivery"},
-  { headerText : "Domino's: Yeah, we got 'em", name: "Domino's", route:"dominoes", img: dominos, address: "2626 W State St Unit 1, Olean, NY", phoneNumber: "(716) 373-4210", deliver: "Yes, popular delivery" },
-  { headerText : "Rafi's Platter: A Cultural Bliss", name: "Rafi's Platter", route:"rafiplatter", img: rafis, address: "800 Wayne St, Olean, NY 14760", phoneNumber: "(716) 790-8294", deliver: ""},
-  { headerText : "Union Tea Cafe: Pass the Tea!", name: "Union Tea Cafe", route:"unionteacafe", img: uniontea, address: "301 N Union St, Olean, NY 14760", phoneNumber: "(716) 701-4014", deliver: ""},
-  { headerText : "Beef'n Barrel: Local Favorite", name: "Beef'n Barrel", route:"beefnbarrel", img: beefnbarrel, address: "146 N Union St, Olean, NY 14760", phoneNumber: "(716) 372-2985", deliver: ""}
+  { vibe: "American restaurant.", route: "applebees", name:"Applebees", headerText : "Applebees: A Standard American Experience", img: applebees, price: "$$ 11-30$", hours: "SuMTWTh 11AM - 12AM, FSa 11AM - 1AM", type: "sit-in", health: "73/100", address: "3067 W State St, Olean, NY", phoneNumber: "(716) 372-2828", deliver: "No delivery", review: "Bobby Nguyen '21': I personally enjoy the food here. Karaoke nights are always a plus!" },
+  { vibe: "Chinese restaurant.", route: "lakeview", name:"Lake View", headerText : "Lake View: Craving Chinese?", img: lakeview, price: "$ 10-15$", hours: "SaSuMTWThF 11AM - 9PM", type: "sit-in, carry-out, delivery", health: "None reported", address: "3042 NY-417, Olean, NY", phoneNumber: "(716) 373-0100", deliver: "Yes delivery"},
+  { vibe: "Pizza place.", route:"dominoes", name: "Domino's", headerText : "Domino's: Yeah, we got 'em", img: dominos, price: "$ 10-15$", hours: "SuMTWTh 10:30AM - 1AM, FSa 10:30AM - 2:00AM", type: "carry-out, delivery", health: "90/100",address: "2626 W State St Unit 1, Olean, NY", phoneNumber: "(716) 373-4210", deliver: "Yes, popular delivery" },
+  { vibe: "IndoAmerican restaurant.", route:"rafiplatter", name: "Rafi's Platter", headerText : "Rafi's Platter: A Cultural Bliss", img: rafis, price: "$$ 10-30$", hours: "MTWTh 11AM - 9PM, F 11AM - 10PM, Sa 12PM-10PM, Su 12PM-7PM", type: "sit-in, carry-out", health: "82/100", address: "800 Wayne St, Olean, NY 14760", phoneNumber: "(716) 790-8294", deliver: ""},
+  { vibe: "Tea and savory lunch.", route:"unionteacafe", name: "Union Tea Cafe", headerText : "Union Tea Cafe: Pass the Tea!", img: uniontea, price: "$$ 11-30$", hours: "MTWThF 8:30AM - 6PM, Sa 8AM - 3PM", type: "sit-in, carry-out", health: "71/100", address: "301 N Union St, Olean, NY 14760", phoneNumber: "(716) 701-4014", deliver: ""},
+  { vibe: "American restaurant.", route:"beefnbarrel", name: "Beef'n Barrel", headerText : "Beef'n Barrel: Local Favorite", img: beefnbarrel, price: "$$ 11-30$", hours: "MTWThFSa 11AM - 10PM,", type: "sit-in, carry-out", health: "66/100",address: "146 N Union St, Olean, NY 14760", phoneNumber: "(716) 372-2985", deliver: ""}
 ]
 
 const Restaurants = () => (
@@ -24,9 +24,9 @@ const Restaurants = () => (
           <Nav destinations = {restaurants} subroute = "restaurants"/>
       <div style={{ height: 800, border: '3px solid black'}}>
       {
-        restaurants.map( ({headerText, name, route, img, address, phoneNumber, deliver, review}) => (
+        restaurants.map( ({headerText, name, route, img, address, phoneNumber, deliver, review, price, hours, type, health, vibe}) => (
           <Route key={name} exact path={"/restaurants/" + route}
-          render = { () => <Restaurant headerText={headerText} img = {img} address = {address} phoneNumber = {phoneNumber} deliver = {deliver} review = {review}/> } />
+          render = { () => <Restaurant headerText={headerText} img = {img} address = {address} phoneNumber = {phoneNumber} deliver = {deliver} review = {review} price = {price} hours = {hours} type = {type} health = {health} vibe = {vibe}/> } />
         ))
       }
       </div>
@@ -35,17 +35,43 @@ const Restaurants = () => (
 
 )
 
-const Restaurant = ({ headerText, img, address, phoneNumber, deliver, review }) => {
+const Restaurant = ({ headerText, img, address, phoneNumber, deliver, review, price, hours, type, health, vibe}) => {
         return (
           <div className = "restaurant-page">
-            <h1 style ={{fontFamily: 'Arial', letterSpacing: '3px', fontStyle: 'italic', fontSize: '25px'}}>{ headerText }</h1>
+            <h1 className = "headerText" style ={{fontFamily: 'Arial', color: 'blue', letterSpacing: '3px', fontStyle: 'italic', fontSize: '25px', align: 'center'}}>{ headerText }</h1>
             <img className = "img" alt = {img} src = {img}/>
-            <p style ={{fontFamily: 'Arial', letterSpacing: '5px', fontSize: '20px'}}>Address: { address }</p>
-            <p style ={{fontFamily: 'Arial', letterSpacing: '5px', fontSize: '20px'}}>Phone Number: { phoneNumber }</p>
-            <p style ={{fontFamily: 'Arial', letterSpacing: '5px', fontSize: '20px'}}>{ deliver }
-        <br/> <br/> Review:
-            </p>
-            <p style ={{fontFamily: 'Arial', letterSpacing: '2px', fontSize: '15px'}}>{review}</p>
+            <br></br>
+            <h2 className = "headerText" style ={{fontFamily: 'Times New Roman', color: 'purple', letterSpacing: '2px', fontSize: '20px', align: 'center'}}>{vibe}</h2>
+            <br></br>
+            <table style={{width:'30%'}}>
+                <tr>
+                  <td>Price:</td>
+                  <td>{price}</td>
+                </tr>
+                <tr>
+                  <td>Hours:</td>
+                  <td>{hours}</td>
+                </tr>
+                <tr>
+                  <td>Phone Number:</td>
+                  <td>{phoneNumber}</td>
+                </tr>
+                <tr>
+                  <td>Address:</td>
+                  <td>{address}</td>
+                </tr>
+                <tr>
+                  <td>Type</td>
+                  <td>{type}</td>
+                </tr>
+                <tr>
+                  <td>Health Score:</td>
+                  <td>{health}</td>
+                </tr>
+            </table>
+            <br></br>
+            <p style ={{fontFamily: 'Arial', letterSpacing: '5px', fontSize: '20px'}}></p>
+            <p style ={{fontFamily: 'Arial', letterSpacing: '2px', fontSize: '15px'}}></p>
           </div>
         )
 }
