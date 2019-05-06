@@ -35,10 +35,10 @@ const Bars = () => (
 const Bar = ({ headerText, img, address, phoneNumber, deliver, review, price, hours, health, vibe}) => {
         return (
           <div className = "restaurant-page">
-            <h1 className = "headerText" style ={{fontFamily: 'Arial', color: 'blue', letterSpacing: '3px', fontStyle: 'italic', fontSize: '25px', align: 'center'}}>{ headerText }</h1>
+            <h1 className = "headerText" style ={{fontFamily: 'Arial', color: 'black', letterSpacing: '4px', fontStyle: 'italic', fontSize: '30px', align: 'center'}}>{ headerText }</h1>
             <img className = "img" alt = {img} src = {img}/>
             <br></br>
-            <h2 className = "headerText" style ={{fontFamily: 'Times New Roman', color: 'purple', letterSpacing: '2px', fontSize: '20px', align: 'center'}}>{vibe}</h2>
+            <h2 className = "headerText" style ={{fontFamily: 'Arial', color: 'black', letterSpacing: '5px', fontSize: '20px', align: 'center'}}>{vibe}</h2>
             <br></br>
             <table style={{width:'30%'}}>
                 <tr>
