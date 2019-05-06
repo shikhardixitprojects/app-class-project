@@ -40,12 +40,12 @@ const Restaurants = () => (
 const Restaurant = ({ headerText, img, address, phoneNumber, deliver, review, price, hours, type, health, vibe}) => {
         return (
           <div className = "restaurant-page">
-            <h1 className = "headerText" style ={{fontFamily: 'Arial', color: 'blue', letterSpacing: '3px', fontStyle: 'italic', fontSize: '25px', align: 'center'}}>{ headerText }</h1>
+            <h1 className = "headerText" style ={{fontFamily: 'Arial, sans-serif', color: 'black', letterSpacing: '4px', fontStyle: 'italic', fontSize: '30px', align: 'center'}}>{ headerText }</h1>
             <img className = "img" alt = {img} src = {img}/>
             <br></br>
-            <h2 className = "headerText" style ={{fontFamily: 'Times New Roman', color: 'purple', letterSpacing: '2px', fontSize: '20px', align: 'center'}}>{vibe}</h2>
+            <p className = "headerText" style ={{fontFamily: 'Arial', color: 'black', letterSpacing: '5px', fontSize: '20px', align: 'center'}}>{vibe}</p>
             <br></br>
-            <table style={{width:'30%'}}>
+            <table style={{width:'50%'}}>
                 <tr>
                   <td>Price:</td>
                   <td>{price}</td>
@@ -72,7 +72,7 @@ const Restaurant = ({ headerText, img, address, phoneNumber, deliver, review, pr
                 </tr>
             </table>
             <br></br>
-            <p style ={{fontFamily: 'Arial', letterSpacing: '5px', fontSize: '20px'}}></p>
+            <p style ={{fontFamily: 'Arial', fontWeight: '800px', fontStyle: 'italic', letterSpacing: '5px', fontSize: '20px'}}></p>
             <p style ={{fontFamily: 'Arial', letterSpacing: '2px', fontSize: '15px'}}></p>
           </div>
         )
