@@ -9,6 +9,8 @@ import uniontea from "../assets/uniontea.jpeg"
 import beefnbarrel from "../assets/beef n barrel.jpg"
 import greenacres from "../assets/green-acres-cafe.jpg"
 import randy from "../assets/randy.jpeg"
+import grandslam from "../assets/GrandSlamGrill.jpg"
+import mirchi from "../assets/mirchi.jpg"
 
 
 const restaurants = [
@@ -19,7 +21,9 @@ const restaurants = [
   { vibe: "Tea and savory lunch.", route:"unionteacafe", name: "Union Tea Cafe", headerText : "Union Tea Cafe: Pass the Tea!", img: uniontea, price: "$$ 11-30$", hours: "MTWThF 8:30AM - 6PM, Sa 8AM - 3PM", type: "sit-in, carry-out", health: "71/100", address: "301 N Union St, Olean, NY 14760", phoneNumber: "(716) 701-4014"},
   { vibe: "American restaurant.", route:"beefnbarrel", name: "Beef'n Barrel", headerText : "Beef'n Barrel: Local Favorite", img: beefnbarrel, price: "$$ 11-30$", hours: "MTWThFSa 11AM - 10PM,", type: "sit-in, carry-out", health: "66/100",address: "146 N Union St, Olean, NY 14760", phoneNumber: "(716) 372-2985"},
   { vibe: "Great low-key breakfast/brunch spot.", route:"greenacres", name: "Green Acres Cafe", headerText : "Green Acres Cafe: Serendipitious Encounter", img: greenacres, price: "$ ~10$", hours: "MTWTh 8AM-2PM, F 8AM-8PM, SaSu 8AM-2PM", type: "sit-in, carry-out", health: "None reported",address: "133 N Union St, Olean, NY 14760", phoneNumber: "(716) 373-5670"},
-  { vibe: "American restaurant, wings and burgers.", route:"randys", name: "Randy's Up the River", headerText : "Randy's Up the River: Let Your Wings Fly", img: randy, price: "$$ 11-30$", hours: "MTWThFSaSu 11AM-2AM", type: "sit-in, carry-out", health: "72/100",address: "3767 S Nine Mile Rd Allegany, NY 14706", phoneNumber: "(716) 372-9606"}
+  { vibe: "American restaurant, wings and burgers.", route:"randys", name: "Randy's Up the River", headerText : "Randy's Up the River: Let Your Wings Fly", img: randy, price: "$$ 11-30$", hours: "MTWThFSaSu 11AM-2AM", type: "sit-in, carry-out", health: "72/100",address: "3767 S Nine Mile Rd Allegany, NY 14706", phoneNumber: "(716) 372-9606"},
+  { vibe: "American restaurant, steak.", route:"grandslam", name: "Grand Slam Grill", headerText : "Grand Slam Grill: We're Right Next to Bonas", img: grandslam, price: "$$ 10-30$", hours: "TWThFSaSu 11AM-10PM", type: "sit-in, carry-out", health: "94/100",address: "3132 Nys Rte 417 Olean, NY 14760", phoneNumber: "(716) 379-8870"},
+  { vibe: "Indian restaurant.", route:"mirchi", name: "Mirchi", headerText : "Mirchi: Closest to Home-Cooked Indian", img: mirchi, price: "$$ 11-30$", hours: "MTWTh 11AM-9PM, FSa 11AM-10PM", type: "sit-in, carry-out, delivery", health: "87/100",address: "1020 N Union St Olean, NY 14760", phoneNumber: "(716) 790-8473"}
 
 ]
 

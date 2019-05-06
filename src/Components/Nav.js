@@ -5,7 +5,7 @@ import StickyBox from "react-sticky-box";
 
 const Nav = ({destinations, subroute}) => (
 
-  <StickyBox style={{ height: '800px', border: '3px solid black', background: 'linear-gradient(to bottom, #FDA7DF,#f9ca24)' }}>
+  <StickyBox style={{ height: '700px', border: '3px solid black', background: 'linear-gradient(to bottom, #FDA7DF,#f9ca24)' }}>
   {
     destinations.map( ({headerText, name, route}) => (
       <div className = "links" key = {name}>
