@@ -8,6 +8,7 @@ import rafis from "../assets/Rafi's Platter.jpg"
 import uniontea from "../assets/uniontea.jpeg"
 import beefnbarrel from "../assets/beef n barrel.jpg"
 import greenacres from "../assets/green-acres-cafe.jpg"
+import randy from "../assets/randy.jpeg"
 
 
 const restaurants = [
@@ -17,7 +18,9 @@ const restaurants = [
   { vibe: "IndoAmerican restaurant.", route:"rafiplatter", name: "Rafi's Platter", headerText : "Rafi's Platter: A Cultural Bliss", img: rafis, price: "$$ 10-30$", hours: "MTWTh 11AM - 9PM, F 11AM - 10PM, Sa 12PM-10PM, Su 12PM-7PM", type: "sit-in, carry-out", health: "82/100", address: "800 Wayne St, Olean, NY 14760", phoneNumber: "(716) 790-8294",},
   { vibe: "Tea and savory lunch.", route:"unionteacafe", name: "Union Tea Cafe", headerText : "Union Tea Cafe: Pass the Tea!", img: uniontea, price: "$$ 11-30$", hours: "MTWThF 8:30AM - 6PM, Sa 8AM - 3PM", type: "sit-in, carry-out", health: "71/100", address: "301 N Union St, Olean, NY 14760", phoneNumber: "(716) 701-4014"},
   { vibe: "American restaurant.", route:"beefnbarrel", name: "Beef'n Barrel", headerText : "Beef'n Barrel: Local Favorite", img: beefnbarrel, price: "$$ 11-30$", hours: "MTWThFSa 11AM - 10PM,", type: "sit-in, carry-out", health: "66/100",address: "146 N Union St, Olean, NY 14760", phoneNumber: "(716) 372-2985"},
-  { vibe: "Great low-key breakfast/brunch spot.", route:"greenacres", name: "Green Acres Cafe", headerText : "Green Acres Cafe: Serendipitious Encounter", img: greenacres, price: "$ ~10$", hours: "MTWTh 8AM-2PM, F 8AM-8PM, SaSu 8AM-2PM", type: "sit-in, carry-out", health: "None reported",address: "133 N Union St, Olean, NY 14760", phoneNumber: "(716) 373-5670"}
+  { vibe: "Great low-key breakfast/brunch spot.", route:"greenacres", name: "Green Acres Cafe", headerText : "Green Acres Cafe: Serendipitious Encounter", img: greenacres, price: "$ ~10$", hours: "MTWTh 8AM-2PM, F 8AM-8PM, SaSu 8AM-2PM", type: "sit-in, carry-out", health: "None reported",address: "133 N Union St, Olean, NY 14760", phoneNumber: "(716) 373-5670"},
+  { vibe: "American restaurant, wings and burgers.", route:"randys", name: "Randy's Up the River", headerText : "Randy's Up the River: Let Your Wings Fly", img: randy, price: "$$ 11-30$", hours: "MTWThFSaSu 11AM-2AM", type: "sit-in, carry-out", health: "72/100",address: "3767 S Nine Mile Rd Allegany, NY 14706", phoneNumber: "(716) 372-9606"}
+
 ]
 
 const Restaurants = () => (
