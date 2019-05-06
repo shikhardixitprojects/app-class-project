@@ -3,8 +3,10 @@
 }
 body{
   /* background-color: #7ed6df; */
-  background-color: #36096d;
-background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 75%);
+  /* background-color: #36096d;
+background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 75%); */
+background-color: #63a4ff;
+background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
 }
 
 .appTitle {
@@ -58,8 +60,8 @@ background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 75%);
   padding-top: 5px;
 }
 .verticalLine {
-  border-left: 4px solid black;
-  height: 750px;
+  border-left: solid black;
+  height:   -750px;
   /* left: 50%; */
   /* margin-left: -3px; */
   grid-column-start: 2;
@@ -90,7 +92,7 @@ background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 75%);
   justify-content: space-between;
   align-items: flex-end;
   margin: 0px;
-  border-style: solid;
+  border-style: 2px solid white;
   background: linear-gradient(to right,#FDA7DF,#f9ca24);
 
 }
@@ -113,7 +115,7 @@ background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 75%);
 .mainMenu {
   display: grid;
   grid-template-columns: 50% 2.5% 47.5%;
-  border-style: solid;
+  border-style: solid white;
 }
 .menuOptionsLocation{
   font-size: 15px;
@@ -152,6 +154,7 @@ background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 75%);
   width: 20%;
     display: flex;
     padding-top: 10px;
+    padding-bottom: 250px;
     justify-content: space-around;
     flex-direction: row;
     display: inline-block;
@@ -171,8 +174,8 @@ background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 75%);
 }
 
 .img{
-  height: 200px;
-  width: 300px;
+  height: 300px;
+  width: 500px;
   align-self: center;
 }
 
@@ -187,18 +190,18 @@ background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 75%);
 
 .headerText{
   align-self: center;
-  background: -webkit-linear-gradient(315deg, #f5d020 15%, #f53803 99%);
+  background: -webkit-linear-gradient(315deg, #d4418e 10%, #0652c5 74%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-color: #f5d020;
-
-
-
 }
 
 table, th, td {
-  border: 2px solid black;
+  border: 1px solid white;
   align-self: center;
+  font-size: 25px;
+  /* background: -webkit-linear-gradient(315deg, #d4418e 10%, #0652c5 74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
 }
 
 

@@ -9,8 +9,8 @@ import base from "../assets/base.jpg"
 const bars = [
   { headerText : "BURTON", name:"Burton", route: "burton" , img: burton, price: "$ 2.75-12$", hours: "MTWThSa 11:30AM - 7PM, F 11:30AM - 8PM",  health: "88/100", address: "1 E Main St Allegany New York", phoneNumber: "(716) 372-3107" },
   { headerText : "OP", name:"The Other Place", route: "otherplace" , img: otherplace, price: "$ 3-40$", hours: "MTWThFSaSu 11:0AM - 9PM",  health: "None available", address: "91 W Main St, Allegany, NY 14706", phoneNumber: "(716) 372-4002" },
-  { headerText : "Fusion", name: "Fusion", route:"fusion",img: fusion, price: "$ 2-22$", hours: "M 4PM-10PM TW 11AM - 12AM ThFSa 11AM - 2AM, Su 11AM - 8PM",  health: "81/100", address: "115 W Main St, Allegany, NY 14706", phoneNumber: "(716) 379-8394"},
-  { headerText : "Third Base", name: "3rd Base", route: "3rdbase", img: base, price: "$ 3-40$", hours: "MTWThFSa 11AM - 2AM, Su 12PM - 2AM",  health: "None available", address: "1302 W State St, Olean, NY 14760", phoneNumber: "(716) 372-8779" },
+  { headerText : "FUSION", name: "Fusion", route:"fusion",img: fusion, price: "$ 2-22$", hours: "M 4PM-10PM TW 11AM - 12AM ThFSa 11AM - 2AM, Su 11AM - 8PM",  health: "81/100", address: "115 W Main St, Allegany, NY 14706", phoneNumber: "(716) 379-8394"},
+  { headerText : "THIRD BASE", name: "3rd Base", route: "3rdbase", img: base, price: "$ 3-40$", hours: "MTWThFSa 11AM - 2AM, Su 12PM - 2AM",  health: "None available", address: "1302 W State St, Olean, NY 14760", phoneNumber: "(716) 372-8779" },
 ]
 
 
@@ -19,7 +19,7 @@ const Bars = () => (
   <div>
     <div style={{ display: 'grid', gridTemplateColumns: '17% 83%', minHeight: '100%' }}>
           <Nav destinations = {bars} subroute = "bars"/>
-      <div style={{ height: 800, border: '3px solid black'}}>
+      <div style={{ height: 800}}>
       {
         bars.map( ({headerText, name, route, img, address, phoneNumber, deliver, review, price, hours, type, health, vibe}) => (
           <Route key={name} exact path={"/bars/" + route}
@@ -35,12 +35,12 @@ const Bars = () => (
 const Bar = ({ headerText, img, address, phoneNumber, deliver, review, price, hours, health, vibe}) => {
         return (
           <div className = "restaurant-page">
-            <h1 className = "headerText" style ={{fontFamily: 'Arial', color: 'black', letterSpacing: '4px', fontStyle: 'italic', fontSize: '30px', align: 'center'}}>{ headerText }</h1>
+            <h1 className = "headerText" style ={{fontFamily: 'Arial', color: 'white', letterSpacing: '4px', fontStyle: 'italic', fontSize: '30px', align: 'center'}}>{ headerText }</h1>
             <img className = "img" alt = {img} src = {img}/>
             <br></br>
-            <h2 className = "headerText" style ={{fontFamily: 'Arial', color: 'black', letterSpacing: '5px', fontSize: '20px', align: 'center'}}>{vibe}</h2>
+            <h2 className = "headerText" style ={{fontFamily: 'Arial', color: 'white', letterSpacing: '5px', fontSize: '20px', align: 'center'}}>{vibe}</h2>
             <br></br>
-            <table style={{width:'30%'}}>
+            <table style={{width:'65%', color: 'black'}}>
                 <tr>
                   <td>Price:</td>
                   <td>{price}</td>
@@ -63,8 +63,8 @@ const Bar = ({ headerText, img, address, phoneNumber, deliver, review, price, ho
                 </tr>
             </table>
             <br></br>
-            <p style ={{fontFamily: 'Arial', letterSpacing: '5px', fontSize: '20px'}}></p>
-            <p style ={{fontFamily: 'Arial', letterSpacing: '2px', fontSize: '15px'}}></p>
+            <p style ={{fontFamily: 'Arial', letterSpacing: '5px', fontSize: '20px', color: 'white'}}></p>
+            <p style ={{fontFamily: 'Arial', letterSpacing: '2px', fontSize: '15px', color: 'white'}}></p>
           </div>
         )
 }
