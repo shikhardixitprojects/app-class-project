@@ -5,12 +5,14 @@ import fusion from "../assets/fusion.jpg"
 import burton from "../assets/burton.jpg"
 import otherplace from "../assets/otherplace.jpg"
 import base from "../assets/base.jpg"
+import hickeylogo2 from "../assets/hickey-logo2.jpg"
 
 const bars = [
-  { headerText : "BURTON", name:"Burton", route: "burton" , img: burton, price: "$ 2.75-12$", hours: "MTWThSa 11:30AM - 7PM, F 11:30AM - 8PM",  health: "88/100", address: "1 E Main St Allegany New York", phoneNumber: "(716) 372-3107" },
-  { headerText : "OP", name:"The Other Place", route: "otherplace" , img: otherplace, price: "$ 3-40$", hours: "MTWThFSaSu 11:0AM - 9PM",  health: "None available", address: "91 W Main St, Allegany, NY 14706", phoneNumber: "(716) 372-4002" },
-  { headerText : "FUSION", name: "Fusion", route:"fusion",img: fusion, price: "$ 2-22$", hours: "M 4PM-10PM TW 11AM - 12AM ThFSa 11AM - 2AM, Su 11AM - 8PM",  health: "81/100", address: "115 W Main St, Allegany, NY 14706", phoneNumber: "(716) 379-8394"},
-  { headerText : "THIRD BASE", name: "3rd Base", route: "3rdbase", img: base, price: "$ 3-40$", hours: "MTWThFSa 11AM - 2AM, Su 12PM - 2AM",  health: "None available", address: "1302 W State St, Olean, NY 14760", phoneNumber: "(716) 372-8779" },
+  { headerText : "BURTON", name:"Burton", route: "burton" , img: burton, price: "$ 2.75-12$", hours: "M/T/W/Th/Sa 11:30AM - 7PM, Fri 11:30AM - 8PM",  health: "88/100", address: "1 E Main St Allegany New York", phoneNumber: "(716) 372-3107" },
+  { headerText : "OP", name:"The Other Place", route: "otherplace" , img: otherplace, price: "$ 3-40$", hours: "M/T/W/Th/F/Sat/Sun 11:0AM - 9PM",  health: "None available", address: "91 W Main St, Allegany, NY 14706", phoneNumber: "(716) 372-4002" },
+  { headerText : "FUSION", name: "Fusion", route:"fusion",img: fusion, price: "$ 2-22$", hours: "Mon 4PM-10PM T/W 11AM - 12AM Th/F/Sat 11AM - 2AM, Sun 11AM - 8PM",  health: "81/100", address: "115 W Main St, Allegany, NY 14706", phoneNumber: "(716) 379-8394"},
+  { headerText : "THIRD BASE", name: "3rd Base", route: "3rdbase", img: base, price: "$ 3-40$", hours: "M/T/W/Th/F/Sat 11AM - 2AM, Sun 12PM - 2AM",  health: "None available", address: "1302 W State St, Olean, NY 14760", phoneNumber: "(716) 372-8779" },
+{ headerText : "HICKEY TAVERN", name: "Hickey Tavern", route: "hickeytav", img: hickeylogo2, price: "$ 3-40$", hours: "T/W/Th/F/Sat 5PM - 2AM",  health: "None available", address: "96 W Main St, St. Bonaventure, NY", phoneNumber: "(716) 372-9657" },
 ]
 
 
