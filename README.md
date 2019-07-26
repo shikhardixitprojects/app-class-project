@@ -1,4 +1,32 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This web application is a class project to create a restaurants' reviews for restaurants near St. Bonaventure, NY. Our team included 5 people. Coded using React. Implemented the Scrum workflow. 
+We decide to call our website BELP, modeled after YELP, as 'B' is for 'Bonaventure'
+
+*This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Please scroll past Demos to see available scripts!*
+
+# Demos
+
+### BELP Home Page
+We take the idea from balenciaga.com of simple and primitive designs and add our own colors.
+
+<img src="https://github.com/shikhardixitprojects/app-class-project/blob/master/src/assets/Homepage.png">
+
+### BELP Restaurants/Bars Page
+Very primitive. We hope to develop further into layout and content.
+
+<img src="https://github.com/shikhardixitprojects/app-class-project/blob/master/src/assets/Restaurants.png">
+
+### BELP About Page
+Here, we define our goal and target audience
+
+<img src="https://github.com/shikhardixitprojects/app-class-project/blob/master/src/assets/About.png">
+
+### BELP Contact Us Page
+We include our team members' bitmojis. We hope to build further in that user can click on one of these bitmojis to send them emails.
+
+<img src="https://github.com/shikhardixitprojects/app-class-project/blob/master/src/assets/Contact.png">
+
+***If you have a question, all of us can be contacted via our email addresses as shown in the BELP Contact Us Page***
+
 
 ## Available Scripts
 
