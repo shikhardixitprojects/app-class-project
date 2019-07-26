@@ -1,3 +1,4 @@
+# What is this? 
 This web application is a class project to create a restaurants' reviews for restaurants near St. Bonaventure, NY. Our team included 5 people. Coded using React. Implemented the Scrum workflow. 
 We decide to call our website BELP, modeled after YELP, as 'B' is for 'Bonaventure'
 
@@ -28,7 +29,7 @@ We include our team members' bitmojis. We hope to build further in that user can
 ***If you have a question, all of us can be contacted via our email addresses as shown in the BELP Contact Us Page***
 
 
-## Available Scripts
+# Available Scripts
 
 In the project directory, you can run:
 
